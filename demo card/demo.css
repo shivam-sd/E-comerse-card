@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bag-container{
+    border: 1px solid black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+#input{
+    height: 40px;
+    width: 1000px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0.3px 0.2px 0.3px 0.6px black;
+}
+#input::placeholder{
+    font-size: 18px;
+}
+#input:active{
+    outline: aqua;
+}
+#bag{
+    font-size: 30px;
+    cursor: pointer;
+}
+#menu{
+    font-size: 30px;
+    cursor: pointer;
+}
+#item-store{
+    border: 1px solid black;
+    position: absolute;
+    /* position: relative; */
+    border-radius: 8px;
+    /* left: 1000px; */
+    margin-right: 300px;
+    background-color: rgb(238, 232, 232);
+    top: 60px;
+    padding: 5px;
+    display: none;
+}
+@media (min-width:360px){
+    #item-store{
+        left: 110px;
+        top: 62px;
+    }
+    #bag{
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    #menu{
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+.cart-item{
+    border-bottom: 1px solid black;
+    /* width: 190px; */
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.store-img{
+    width: 60px;
+    height: 50px;
+    /* border: 1px solid yellow; */
+    background-color: rgb(245, 242, 242);
+    overflow: hidden;
+    position: relative;
+    /* transform: rotate(270deg); */
+}
+#card-img{
+    /* transform: rotate(270deg); */
+    object-fit: cover;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.details-cart{
+    color: black;
+    margin-left: 8px;
+    font-size: 20px;
+}
+.products{
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* height: 30px; */
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    white-space: nowrap;
+    /* -webkit-overflow-scrolling: touch; */
+    /* gap: 5; */
+    overflow: auto;
+
+}
+@media (min-width:360px) {
+     .product {
+        height: 300px;
+     }
+}
+.products1{
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* height: 30px; */
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    white-space: nowrap;
+    /* -webkit-overflow-scrolling: touch; */
+    /* gap: 5; */
+    overflow: auto;
+
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+.product{
+    width: 300px;
+    height: 390px;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+    /* overflow: -moz-hidden-unscrollable; */
+}
+
+.img{
+    width: 95%;
+    height:120px;
+    /* border: 1px solid black; */
+    background-color: rgb(238, 233, 233);
+    margin-left: 7px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.data{
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.data1{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    font-size: 18px;
+    margin-left: 4px;
+
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(to right bottom , #69628a, #040309);
+}
+.samll-data{
+    margin-top: 15px;
+}
+@media (min-width:430px) {
+    .product{
+        height: 350px;
+        width: 350px;
+    }
+    .img{
+        height: 220px;
+    }
+    
+}
+#set{
+    width: 235px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% , 100%;
+    object-fit: cover;
+    /* margin-right: 5px; */
+}
